@@ -54,7 +54,7 @@ module.exports = {
 
       // Construct API URL for downloading the top result
       const apiKey = "priyansh-here";
-      const apiUrl = `https://priyansh-ai.onrender.com/youtube?id=${videoId}&type=${type}&apikey=${apiKey}`;
+      const apiUrl = `https://priyanshuapi.xyz/youtube?id=music.js&type=&apikey=priyansh-here`;
 
       api.setMessageReaction("⌛", event.messageID, () => {}, true);
 
