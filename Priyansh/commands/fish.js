@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "fish",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐧𝐜𝐞 𝐃𝐢𝐥𝐬𝐡𝐚𝐝",
+	credits: "Huy",
 	description: "Sell own capital",
 	commandCategory: "Economy",
     cooldowns: 5,

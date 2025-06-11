@@ -4,7 +4,7 @@ module.exports.config = {
 
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐧𝐜𝐞 𝐃𝐢𝐥𝐬𝐡𝐚𝐝",
+	credits: "trump",
 	description: "Comment on the board ( ͡° ͜ʖ ͡°)",
 	commandCategory: "edit-img",
 	usages: "trump [text]",
