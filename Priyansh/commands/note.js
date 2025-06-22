@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "note",
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐧𝐜𝐞 𝐃𝐢𝐥𝐬𝐡𝐚𝐝",
+	credits: "DuyVuong",
 	description: "Customize notes for each group",
 	commandCategory: "Box chat",
 	usages: "[add/remove/all] [note]",

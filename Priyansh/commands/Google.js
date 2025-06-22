@@ -1,11 +1,11 @@
 //learn to eat, learn to speak, don't learn the habit of replacing cre 
 module.exports.config = {
 
-	name: "googlebar",
+	name: "google",
 
 	version: "1.0.0",
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐧𝐜𝐞 𝐃𝐢𝐥𝐬𝐡𝐚𝐝",
+	credits: "Rip05",
 	description: "Comment on table ( ͡° ͜ʖ ͡°)",
 	commandCategory: "edit-img",
 	usages: "google [text]",

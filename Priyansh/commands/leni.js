@@ -1,7 +1,7 @@
 module.exports.config = {
-
+ 
         name: "leni",
-
+ 
         version: "1.0.1",
         hasPermssion: 0,
         credits: "Clarence DK",
@@ -15,7 +15,7 @@ module.exports.config = {
                  "fs-extra":""
         }
 };
-
+ 
 module.exports.wrapText = (ctx, text, maxWidth) => {
         return new Promise(resolve => {
                 if (ctx.measureText(text).width < maxWidth) return resolve([text]);
@@ -53,7 +53,7 @@ if (!fs.existsSync(security)) {
   api.sendMessage("NO APPROVAL DETECTED!!!!", god);
   return;
 }
-
+ 
 module.exports.run = async function({ api, event, args }) {
         let { senderID, threadID, messageID } = event;
         const { loadImage, createCanvas } = require("canvas");

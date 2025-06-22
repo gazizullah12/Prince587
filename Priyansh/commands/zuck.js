@@ -1,14 +1,14 @@
 //learn to eat, learn to speak, don't learn the habit of replacing cre 
 module.exports.config = {
 
-	name: "lion",
+	name: "zuck",
 
 	version: "1.0.1",
 	hasPermssion: 0,
 	credits: "Tiadals",
 	description: "Comment on the board ( ͡° ͜ʖ ͡°)",
 	commandCategory: "edit-img",
-	usages: "lion [text]",
+	usages: "zuck [text]",
 	cooldowns: 10,
 	dependencies: {
 		"canvas":"",
