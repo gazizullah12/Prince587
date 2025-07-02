@@ -1,10 +1,10 @@
 module.exports.config = {
 	name: "dilshad",
-	version: "1.0.1",
+	version: "3.1.1",
 	hasPermssion: 0,
 	credits: "𝐏𝐫𝐢𝐧𝐜𝐞 𝐃𝐢𝐥𝐬𝐡𝐚𝐝",
 	description: "Comment on the board",
-	commandCategory: "game",
+	commandCategory: "Memes",
 	usages: "[text]",
 	cooldowns: 5,
 	dependencies: {
@@ -48,25 +48,25 @@ module.exports.run = async function({ api, event, args }) {
 	const { loadImage, createCanvas } = require("canvas");
 	const fs = global.nodemodule["fs-extra"];
 	const axios = global.nodemodule["axios"];
-	let pathImg = __dirname + '/cache/markngu.png';
+	let pathImg = __dirname + '/cache/einstein.png';
 	var text = args.join(" ");
 	if (!text) return api.sendMessage("Enter the content of the comment on the board", threadID, messageID);
-	let getPorn = (await axios.get(`https://i.imgur.com/50PaTLQ.jpeg`, { responseType: 'arraybuffer' })).data;
+	let getPorn = (await axios.get(`https://i.ibb.co/RktqDsxC/Logopit-1736110061464.jpg`, { responseType: 'arraybuffer' })).data;
 	fs.writeFileSync(pathImg, Buffer.from(getPorn, 'utf-8'));
 	let baseImage = await loadImage(pathImg);
 	let canvas = createCanvas(baseImage.width, baseImage.height);
 	let ctx = canvas.getContext("2d");
 	ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
-	ctx.font = "800 55px Arial";
-	ctx.fillStyle = "#000000";
+	ctx.font = "400 35px Arial";
+	ctx.fillStyle = "white";
 	ctx.textAlign = "start";
-	let fontSize = 95;
-	while (ctx.measureText(text).width > 5550) {
+	let fontSize = 45;
+	while (ctx.measureText(text).width > 2250) {
 		fontSize--;
-		ctx.font = `800 ${fontSize}px Arial, sans-serif`;
+		ctx.font = `400 ${fontSize}px Arial, sans-serif`;
 	}
-	const lines = await this.wrapText(ctx, text, 840);
-	ctx.fillText(lines.join('\n'), 50,490);//comment
+	const lines = await this.wrapText(ctx, text, 320);
+	ctx.fillText(lines.join('\n'), 300,90);//comment
 	ctx.beginPath();
 	const imageBuffer = canvas.toBuffer();
 	fs.writeFileSync(pathImg, imageBuffer);
